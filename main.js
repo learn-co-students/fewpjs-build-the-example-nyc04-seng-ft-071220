@@ -3,9 +3,22 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const errorMes = document.querySelector("div#modal")
+errorMes.classList.add("hidden")
 
+const likeHearts = document.querySelectorAll("span.like-glyph")
+likeHearts.forEach(likeHeart => {
+  mimicServerCall()
+  .then(res = res.json())
+  .then()
+  .catch((error)={
 
-
+  })
+  
+  likeHeart.addEventListener("click", function(e){
+    this.classList.toggle("activated-heart");
+  })
+})
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes

@@ -3,6 +3,10 @@
 ## Learning Goals
 
 - Identify the three essential pillars of front-end web programming
+1. manipulate the DOM
+2. recognizing the event
+3. comminicate with the server
+
 - Cause a change to given code so that DOM updating effect is seen
 - Cause a change to given code so that server-side behavior is stubbed in
 - Cause a change to given code so that event listening has an effect
@@ -29,7 +33,7 @@ application.
 
 Here's the specification:
 
-* Add the `.hidden` class to the error modal in the HTML so it
+*[X] Add the `.hidden` class to the error modal in the HTML so it
   does not appear when the page first loads
 * When a user clicks on an empty heart ("Recognizing events")
   * Invoke `mimicServerCall` to simulate making a server request
@@ -56,7 +60,7 @@ heart full until you're inside a successful `.then` block.
 ## Conclusion
 
 That's it! Congratulations. You're now a real-deal front-end developer! You can use
-HTML, CSS, and JavaScript to create living, breathing applications. Every web application 
+HTML, CSS, and JavaScript to create living, breathing applications. Every web application
 front-end you see or have seen is built using these three pillars, which you're
 now skilled with! Give yourself a well-deserved pat on the back!
 
