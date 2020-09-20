@@ -2,8 +2,33 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+let glyphStates = {
+  "♡": "♥",
+  "♥": "♡"
+};
 
+let colorStates = {
+  "red" : "",
+  "": "red"
+};
+
+// Your JavaScript code goes here!
+const heartSpan = document.querySelectorAll('.like-glyph')
+const modal = document.querySelector('#modal')
+
+heartSpan.forEach( heart => {
+  heart.addEventListener('click', event => {
+    mimicServerCall("http://mimicServer.example.com")
+    .then( () => {
+      heart.innerText = glyphStates[heart.innerText]
+      heart.style.color = colorStates[heart.style.color] 
+      // this will look at the heart.style.color as a key for the object and then assign value accordingly
+    })
+    .catch(error => {
+      modal.className = ''
+    })
+  })
+})
 
 
 
