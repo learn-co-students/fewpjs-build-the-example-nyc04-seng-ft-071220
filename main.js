@@ -15,6 +15,7 @@ let colorStates = {
 // Your JavaScript code goes here!
 const heartSpan = document.querySelectorAll('.like-glyph')
 const modal = document.querySelector('#modal')
+const addHidden = () => modal.classList.add('hidden')
 
 heartSpan.forEach( heart => {
   heart.addEventListener('click', event => {
@@ -26,10 +27,10 @@ heartSpan.forEach( heart => {
     })
     .catch(error => {
       modal.className = ''
+      setTimeout(addHidden, 3000)
     })
   })
 })
-
 
 
 //------------------------------------------------------------------------------
